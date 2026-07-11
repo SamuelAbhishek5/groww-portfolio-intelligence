@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Report | Groww Portfolio Intelligence</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="report-card">
+      <div class="report-header">
+        <span class="eyebrow">Report Complete</span>
+        <h1>Your portfolio analysis is ready</h1>
+        <p>Review your portfolio health and download the full PDF report.</p>
+      </div>
+
+      <div class="summary-grid">
+        <article class="summary-card">
+          <span class="summary-label">Portfolio Value</span>
+          <strong id="portfolio-value">—</strong>
+        </article>
+        <article class="summary-card">
+          <span class="summary-label">Health Score</span>
+          <strong id="health-score">—</strong>
+        </article>
+      </div>
+
+      <div class="report-actions">
+        <button id="view-report" class="btn btn-primary" disabled>View Report</button>
+        <button id="download-report" class="btn btn-outline" disabled>Download PDF</button>
+      </div>
+
+      <p id="report-feedback" class="feedback">Loading your report details…</p>
+      <a class="btn btn-secondary" href="index.html">Upload a new portfolio</a>
+    </section>
+
+    <section class="chat-card">
+      <div class="chat-header">
+        <span class="eyebrow">Ask Groww AI</span>
+        <h2>Have a question about your report?</h2>
+        <p>Ask anything about your holdings, risk score, or recommendations and get an instant answer.</p>
+      </div>
+
+      <div id="chat-messages" class="chat-messages" aria-live="polite">
+        <div class="chat-message chat-message-bot">
+          <p>Hi! I can answer questions about your portfolio report — try asking "What's driving my risk score?" or "Which holding is riskiest?"</p>
+        </div>
+      </div>
+
+      <form id="chat-form" class="chat-form" novalidate>
+        <input
+          id="chat-input"
+          class="chat-input"
+          type="text"
+          name="query"
+          placeholder="Ask a question about your report..."
+          autocomplete="off"
+        />
+        <button type="submit" id="chat-send" class="btn btn-primary">Send</button>
+      </form>
+
+      <p id="chat-feedback" class="feedback"></p>
+    </section>
+  </main>
+
+  <script type="module" src="js/report.js"></script>
+</body>
+</html>

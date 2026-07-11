@@ -1,0 +1,8 @@
+{
+  "report_id": "197a1da56f0c4046a749cf39294ae8ad",
+  "status": "failed",
+  "pdf_url": "/reports/197a1da56f0c4046a749cf39294ae8ad.pdf",
+  "created_at": "stock_empty.xlsx",
+  "report_path": "reports/197a1da56f0c4046a749cf39294ae8ad.pdf",
+  "error": "Portfolio contains no holdings."
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analyzing Portfolio | Groww Portfolio Intelligence</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="loading-card">
+      <div class="loading-hero">
+        <div class="loading-icon">⏳</div>
+        <h1>Analyzing Portfolio...</h1>
+        <p>We’re processing your file and generating a comprehensive portfolio report.</p>
+      </div>
+
+      <div class="checklist" id="analysis-steps">
+        <article class="checklist-item" data-step="0">
+          <div class="checkmark"></div>
+          <div>
+            <strong>Reading Excel statement</strong>
+            <p>Extracting your holdings and transaction data.</p>
+          </div>
+        </article>
+        <article class="checklist-item" data-step="1">
+          <div class="checkmark"></div>
+          <div>
+            <strong>Risk analysis</strong>
+            <p>Evaluating portfolio exposure and downside risk.</p>
+          </div>
+        </article>
+        <article class="checklist-item" data-step="2">
+          <div class="checkmark"></div>
+          <div>
+            <strong>Generating AI insights</strong>
+            <p>Creating an intelligent summary and tailored recommendations.</p>
+          </div>
+        </article>
+        <article class="checklist-item" data-step="3">
+          <div class="checkmark"></div>
+          <div>
+            <strong>Creating PDF report</strong>
+            <p>Compiling your results into a downloadable portfolio report.</p>
+          </div>
+        </article>
+      </div>
+
+      <p id="processing-feedback" class="feedback">Checking report status every few seconds.</p>
+      <a class="btn btn-secondary" href="index.html">Start another upload</a>
+    </section>
+  </main>
+
+  <div id="failure-overlay" class="modal-overlay" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="failure-title">
+      <div class="modal-icon">⚠️</div>
+      <h2 id="failure-title">Processing Failed</h2>
+      <p id="failure-message">Processing failed. Please try again.</p>
+      <button id="failure-home-btn" class="btn" type="button">Back to Home</button>
+    </div>
+  </div>
+
+  <script type="module" src="js/processing.js"></script>
+</body>
+</html>

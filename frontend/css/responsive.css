@@ -1,0 +1,51 @@
+@media (max-width: 820px) {
+  .page-shell {
+    width: calc(100% - 1.5rem);
+    padding: 2rem 0;
+  }
+
+  .hero-card,
+  .loading-card,
+  .report-card {
+    padding: 2rem;
+  }
+
+  .chat-card {
+    padding: 2rem;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .drop-zone,
+  .file-field,
+  .checklist-item,
+  .summary-card {
+    padding: 1.4rem 1.2rem;
+  }
+
+  .hero-copy h1,
+  .loading-hero h1,
+  .report-header h1 {
+    font-size: 2rem;
+  }
+
+  .report-actions {
+    flex-direction: column;
+  }
+
+  .chat-message {
+    max-width: 92%;
+  }
+
+  .chat-form {
+    flex-direction: column;
+  }
+
+  .chat-form .btn {
+    width: 100%;
+  }
+}

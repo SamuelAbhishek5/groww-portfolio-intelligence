@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Groww Portfolio Intelligence</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-card">
+      <div class="hero-copy">
+        <span class="eyebrow">Groww Portfolio Intelligence</span>
+        <h1>Upload your holdings and get an instant portfolio analysis</h1>
+        <p>Drag your Excel statement into the drop zone or select a file to start. We’ll analyze your portfolio for risk, health, and AI-powered recommendations.</p>
+      </div>
+
+      <form id="upload-form" class="upload-panel" novalidate>
+        <div id="drop-zone" class="drop-zone">
+          <div class="drop-icon">📄</div>
+          <div class="drop-copy">
+            <strong>Drop your Excel file here</strong>
+            <span>Accepted: .xlsx, .xls, .csv</span>
+          </div>
+        </div>
+
+        <label class="file-field" for="file-input">
+          <span>Select file</span>
+          <input id="file-input" name="file" type="file" accept=".xlsx,.xls,.csv" />
+        </label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Upload and Analyze</button>
+        </div>
+
+        <p id="upload-feedback" class="feedback"></p>
+      </form>
+    </section>
+  </main>
+
+  <script type="module" src="js/upload.js"></script>
+</body>
+</html>
