@@ -190,6 +190,17 @@ Install dependencies
 pip install -r requirements.txt
 ```
 
+Create a .env file
+
+Create a file named .env in the project root (or backend directory, depending on your project structure) and add the following variables:
+
+```bash
+GEMINI_API_KEY=your_gemini_api_key
+GEMINI_MODEL=gemini-3.5-flash
+```
+Replace your_gemini_api_key with your own Gemini API key.
+
+
 Run the application
 
 ```bash
@@ -207,11 +218,12 @@ http://127.0.0.1:8000
 # Usage
 
 1. Upload your Groww portfolio Excel file report.
-2. Portfolio data is parsed automatically.
+2. Portfolio data is parsed automatically(waiting time 30 secs for Gemini reponse).
 3. Financial metrics are calculated.
 4. AI generates portfolio insights.
 5. A dashboard displays the analysis.
 6. Download the generated PDF report.
+7. Ask follow-up questions or tips in the chatbot(waiting time 30 secs for Gemini response).
 
 ---
 
@@ -260,7 +272,14 @@ Groww-Portfolio-Intelligence/
 
 ### PDF Report
 
-<img width="1429" height="783" alt="Screenshot 2026-07-12 at 12 09 05 PM" src="https://github.com/user-attachments/assets/89ec440a-34b4-4e59-801f-6497860f0746" />
+<img width="528" height="726" alt="Screenshot 2026-07-12 at 12 30 03 PM" src="https://github.com/user-attachments/assets/11383d6c-49e5-43b2-a686-03fc5c5bf1a1" />
+<img width="518" height="728" alt="Screenshot 2026-07-12 at 12 30 13 PM" src="https://github.com/user-attachments/assets/1649e11c-2d48-4dd6-b0e0-ff09a92956d9" />
+<img width="522" height="724" alt="Screenshot 2026-07-12 at 12 30 24 PM" src="https://github.com/user-attachments/assets/d9eb5ea8-4dac-41a5-8220-d9579834bebd" />
+<img width="506" height="724" alt="Screenshot 2026-07-12 at 12 30 40 PM" src="https://github.com/user-attachments/assets/eb429ba5-006e-42ec-ba6d-653d23e66e9e" />
+<img width="512" height="722" alt="Screenshot 2026-07-12 at 12 30 49 PM" src="https://github.com/user-attachments/assets/d4ee378f-d0f3-45f8-9058-cb9d8314e893" />
+<img width="516" height="722" alt="Screenshot 2026-07-12 at 12 31 01 PM" src="https://github.com/user-attachments/assets/91656272-1c3d-4ab7-88e7-60e4fc8a5409" />
+
+
 
 ### Follow Up Chatbot
 
