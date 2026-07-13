@@ -648,7 +648,7 @@ def _build_metric_cards_image(metrics: dict) -> bytes:
     fig.patch.set_facecolor(_to_matplotlib_color(LIGHT_BG))
     ax.set_facecolor(_to_matplotlib_color(LIGHT_BG))
     ax.axis('off')
-    ax.text(0.05, 0.1, 'Risk Metrics Summary', fontsize=10, color='#24364f', fontweight='bold',va='center')
+    ax.text(0.05, 0.95, 'Risk Metrics Summary', fontsize=10, color='#24364f', fontweight='bold',va='top')
 
     text = [
         ('Volatility', metrics['volatility_display']),
@@ -656,11 +656,11 @@ def _build_metric_cards_image(metrics: dict) -> bytes:
         ('Sharpe Ratio', metrics['sharpe_display']),
         ('Beta', metrics['portfolio_beta_display']),
     ]
-    y = 0.8
+    y = 0.75
     for label, value in text:
         ax.text(0.05, y, label, fontsize=9, color='#24364f', fontweight='bold', va='center')
         ax.text(0.72, y, value, fontsize=9, color=_to_matplotlib_color(ACCENT_BLUE), va='center')
-        y -= 0.2
+        y -= 0.18
     buffer = io.BytesIO()
     fig.tight_layout()
     fig.savefig(buffer, format='png', dpi=160, bbox_inches='tight', facecolor=fig.get_facecolor())
