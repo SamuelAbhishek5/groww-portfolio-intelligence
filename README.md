@@ -288,19 +288,23 @@ Groww-Portfolio-Intelligence/
 
 ---
 
-# Future Enhancements
+## 🚀 Future Enhancements
 
-- Multi-user authentication
-- Groww API parser
-- Portfolio tracking over time
-- Mutual fund support
-- ETF analysis
-- Stock price forecasting
-- Portfolio optimization suggestions
-- Email report delivery
-- Mobile-responsive dashboard
-- Real-time market updates
-- Multi-language support
+- **Direct Groww Integration:** Integrate with the official Groww APIs (when available) to automatically fetch portfolio data without requiring manual Excel uploads.
+
+- **API-Based Portfolio Parsing:** Extend the parser to support portfolio reports received directly through APIs in addition to Excel files.
+
+- **Mutual Fund Analysis:** Add support for mutual fund portfolios with category allocation, overlap analysis, expense ratio insights, and performance evaluation.
+
+- **Mobile-Responsive Dashboard:** Develop a fully responsive dashboard optimized for mobile devices and tablets.
+
+- **Real-Time Market Updates:** Display live stock prices, portfolio value changes, market news, and real-time portfolio performance.
+
+- **Automated Email Reports:** Enable scheduled delivery of AI-generated portfolio reports via email.
+
+- **Multi-User Authentication:** Support secure user accounts with personalized portfolios, settings, and report history.
+
+- **Production-Ready Groww Companion Platform:** Evolve the application into a scalable companion platform that integrates seamlessly with the Groww ecosystem for continuous portfolio monitoring and AI-driven investment insights.
 
 ---
 
