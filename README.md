@@ -104,12 +104,12 @@ Finally, all analyses, insights, and recommendations are compiled into a profess
 
                    FastAPI Backend
 
-          ┌──────────────┼──────────────┐
-          │              │              │
-          ▼              ▼              ▼
+          ┌──────────────┼──────────────────┐
+          │              │                  │
+          ▼              ▼                  ▼
 
-     Excel Parser   Analytics Engine   AI Engine
-                        │               (Gemini)
+     Excel Parser   Analytics Engine  Portfolio Reporter
+                         │             
 
           ┌──────────────┼──────────────┐
           ▼              ▼              ▼
@@ -123,6 +123,13 @@ Finally, all analyses, insights, and recommendations are compiled into a profess
                   Opportunity Engine
 
                           │
+
+                          ▼
+
+                      AI Engine
+                      (Gemini)
+
+                          |
 
                           ▼
 
